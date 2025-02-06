@@ -19,9 +19,7 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("service_ko3hmpt", "template_ahbmmqd", form.current, {
-        publicKey: "I6HAT5mUZH7WHabGE",
-      })
+      .sendForm("service_ko3hmpt", "template_ahbmmqd", form.current, "user_I6HAT5mUZH7WHabGE") // Updated to use user ID
       .then(
         () => {
           setEmail("");
@@ -31,6 +29,7 @@ const ContactForm = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setSuccess("Message failed to send. Please try again.");
         }
       );
   };
