@@ -8,35 +8,35 @@ const projects = [
     name: "MURMER",
     year: "2025",
     align: "right",
-    image: "../../public/images/website-img-1.jpg",
+    image: "./images/website-img-1.jpg",
     link: "https://github.com/snigdhaydv27/Murmer",
   },
   {
     name: "ZenG",
     year: "2024",
     align: "left",
-    image: "../../public/images/ZenG.png",
+    image: "./images/ZenG.png",
     link: "https://github.com/snigdhaydv27/MovieLoom",
   },
   {
     name: "Coder",
     year: "2024",
     align: "right",
-    image: "../../public/images/coder.png",
+    image: "./images/coder.png",
     link: "https://github.com/snigdhaydv27/Coder",
   },
   {
     name: "Spotify Clone",
     year: "May2024",
     align: "left",
-    image: "../../public/images/spotify.png",
+    image: "./images/spotify.png",
     link: "https://github.com/snigdhaydv27/SpotifyClone",
   },
   {
     name: "Fatafat-News",
     year: "2024",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
+    image: "./images/website-img-3.jpg",
     link: "https://github.com/snigdhaydv27/NewsApp",
   },
 ];
@@ -70,4 +70,4 @@ const ProjectsMain = () => {
   );
 };
 
-export default ProjectsMain;
+export default ProjectsMain;  
