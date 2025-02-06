@@ -16,10 +16,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - **Project Showcase** – Displays my best projects with details
 - **Dark Mode** – Toggle between light and dark themes
 - **Optimized Performance** – Fast loading and efficient state management
-
-## 📸 Screenshots
-
-_Add some images or GIFs of your portfolio here_
+- 
 
 ## 🚀 Installation & Setup
 
