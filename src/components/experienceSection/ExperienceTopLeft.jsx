@@ -7,13 +7,13 @@ const ExperienceTopLeft = () => {
         Since 2023
       </p>
       <div className="flex justify-center items-center gap-4">
-        <ExperienceInfo number="2" text="Years" />
+        <ExperienceInfo number="8.46" text="CGPA" />
         <p className="font-bold text-6xl text-lightBrown">-</p>
-        <ExperienceInfo number="10+" text="Websites" />
+        <ExperienceInfo number="850+" text="LeetCode" />
       </div>
       <p className="text-center">
-        With 2 years of experience building dynamic and user-friendly web
-        applications.
+        B.Tech + M.Tech dual-degree student at NIT Patna building full-stack
+        and AI-powered solutions.
       </p>
     </div>
   );

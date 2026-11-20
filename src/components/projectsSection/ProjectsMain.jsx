@@ -5,11 +5,11 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "MURMER",
+    name: "Nutrilens",
     year: "2025",
     align: "right",
     image: "./images/website-img-1.jpg",
-    link: "https://github.com/snigdhaydv27/Murmer",
+    link: "https://github.com/snigdhaydv27/nutrilens",
   },
   {
     name: "ZenG",
@@ -17,6 +17,34 @@ const projects = [
     align: "left",
     image: "./images/ZenG.png",
     link: "https://github.com/snigdhaydv27/MovieLoom",
+  },
+  {
+    name: "DeFace",
+    year: "2025",
+    align: "right",
+    image: "./images/coder.png",
+    link: "https://github.com/snigdhaydv27/DeFace",
+  },
+  {
+    name: "ReLoop",
+    year: "2026",
+    align: "left",
+    image: "./images/spotify.png",
+    link: "https://github.com/snigdhaydv27/hackon_AlgoArchitects.git",
+  },
+  {
+    name: "Buddhi (SIH 2025)",
+    year: "2025",
+    align: "right",
+    image: "./images/website-img-3.jpg",
+    link: "https://github.com/snigdhaydv27/buddhi_archives.git",
+  },
+  {
+    name: "MURMER",
+    year: "2025",
+    align: "left",
+    image: "./images/website-img-1.jpg",
+    link: "https://github.com/snigdhaydv27/Murmer",
   },
   {
     name: "Coder",
@@ -27,7 +55,7 @@ const projects = [
   },
   {
     name: "Spotify Clone",
-    year: "May2024",
+    year: "2024",
     align: "left",
     image: "./images/spotify.png",
     link: "https://github.com/snigdhaydv27/SpotifyClone",
@@ -39,7 +67,11 @@ const projects = [
     image: "./images/website-img-3.jpg",
     link: "https://github.com/snigdhaydv27/NewsApp",
   },
-];
+].sort(
+  (firstProject, secondProject) =>
+    Number.parseInt(firstProject.year, 10) -
+    Number.parseInt(secondProject.year, 10),
+);
 
 const ProjectsMain = () => {
   return (
@@ -59,7 +91,7 @@ const ProjectsMain = () => {
               key={index}
               name={project.name}
               year={project.year}
-              align={project.align}
+              align={index % 2 === 0 ? "right" : "left"}
               image={project.image}
               link={project.link}
             />

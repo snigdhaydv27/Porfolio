@@ -5,6 +5,11 @@ import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
+import { SiPytorch } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiAmazonwebservices } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { DiPython } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
@@ -41,6 +46,50 @@ const skills = [
   {
     skill: "TailwindCSS",
     icon: RiTailwindCssFill,
+  },
+  {
+    skill: "Node.js",
+    icon: FaNodeJs,
+  },
+  {
+    skill: "Python",
+    icon: DiPython,
+  },
+  {
+    skill: "MongoDB",
+    icon: SiMongodb,
+  },
+  {
+    skill: "PyTorch",
+    icon: SiPytorch,
+  },
+  {
+    skill: "AWS",
+    icon: SiAmazonwebservices,
+  },
+  {
+    skill: "LLMs",
+    icon: SiPytorch,
+  },
+  {
+    skill: "RAG",
+    icon: SiPytorch,
+  },
+  {
+    skill: "Transformers",
+    icon: SiPytorch,
+  },
+  {
+    skill: "NumPy / Pandas",
+    icon: DiPython,
+  },
+  {
+    skill: "Scikit-learn",
+    icon: DiPython,
+  },
+  {
+    skill: "REST APIs",
+    icon: FaNodeJs,
   },
 ];
 

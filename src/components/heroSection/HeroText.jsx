@@ -11,7 +11,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="lg:text-2xl sm:text-xl  uppercase text-lightGrey "
       >
-        Full Stack Developer
+        Full-Stack Developer & AI/ML Enthusiast
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -20,7 +20,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="md:text-[2.8rem] lg:text-6xl sm:text-4xl text-orange font-bold uppercase"
       >
-       Snigdha <br className="sm:hidden md:block" />
+        Snigdha <br className="sm:hidden md:block" />
         Kumar
       </motion.h1>
       <motion.p
@@ -30,8 +30,8 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4"
       >
-        A Passionate Web Developer and Coder <br /> with 2 years of
-        experience.
+        Computer Science student building scalable web products, intelligent
+        systems, and thoughtful user experiences.
       </motion.p>
     </div>
   );

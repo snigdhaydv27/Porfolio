@@ -16,7 +16,7 @@ const SkillsMain = () => {
         >
           <SkillsText />
         </motion.div>
-        <div className="bottom-[50px] absolute left-[50%] -translate-x-[50%] sm:hidden lg:block">
+        <div className="hidden lg:block mt-16 pb-16">
           <AllSkills />
         </div>
         <div className="sm:block lg:hidden">

@@ -1,6 +1,16 @@
 import SingleSkill from "./SingleSkill";
 import { FaNodeJs, FaReact } from "react-icons/fa";
-import { SiCplusplus, SiExpress, SiNextdotjs } from "react-icons/si";
+import {
+  SiAmazonwebservices,
+  SiCplusplus,
+  SiDocker,
+  SiExpress,
+  SiMysql,
+  SiNextdotjs,
+  SiPytorch,
+  SiSupabase,
+  SiTypescript,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import { DiJava, DiMongodb, DiPython } from "react-icons/di";
@@ -44,13 +54,72 @@ const skills = [
     skill: "Java",
     icon: DiJava,
   },
-  
+  {
+    skill: "TypeScript",
+    icon: SiTypescript,
+  },
+  {
+    skill: "PyTorch",
+    icon: SiPytorch,
+  },
+  {
+    skill: "MySQL",
+    icon: SiMysql,
+  },
+  {
+    skill: "Supabase",
+    icon: SiSupabase,
+  },
+  {
+    skill: "AWS",
+    icon: SiAmazonwebservices,
+  },
+  {
+    skill: "Docker",
+    icon: SiDocker,
+  },
+  {
+    skill: "LLMs",
+    icon: SiPytorch,
+  },
+  {
+    skill: "RAG",
+    icon: SiPytorch,
+  },
+  {
+    skill: "Transformers",
+    icon: SiPytorch,
+  },
+  {
+    skill: "NumPy",
+    icon: DiPython,
+  },
+  {
+    skill: "Pandas",
+    icon: DiPython,
+  },
+  {
+    skill: "Scikit-learn",
+    icon: DiPython,
+  },
+  {
+    skill: "XGBoost",
+    icon: DiPython,
+  },
+  {
+    skill: "REST APIs",
+    icon: SiExpress,
+  },
+  {
+    skill: "SQL / NoSQL",
+    icon: SiMysql,
+  },
 ];
 
 const AllSkills = () => {
   return (
     <div>
-      <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-12 max-w-[1100px] mx-auto">
         {skills.map((item, index) => {
           return (
             <motion.div

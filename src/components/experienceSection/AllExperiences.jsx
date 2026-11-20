@@ -1,62 +1,74 @@
 import SingleExperience from "./SingleExperience";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
 
 const experiences = [
   {
-    job: "MERN Stack Developer",
-    company: "Smart India Hackathon",
-    date: "2024",
+    job: "Project Lead",
+    company: "Smart India Hackathon 2025",
+    date: "Finalist",
     responsibilities: [
-      "Qualified Internal Round Held in College.",
-      "Worked on Deepfake detection System-Kavach",
-      "Lead role as a web developer among team.",
+      "Led Team BUDDHI's complete frontend and backend development.",
+      "Built an ERP-based Integrated Student Management System.",
+      "Integrated Razorpay payments and deployed the solution on AWS.",
     ],
   },
   {
-    job: "DSA",
-    company: "Algorithm",
-    date: "2024 - Present",
+    job: "Web Developer",
+    company: "Web & Coding Club, NIT Patna",
+    date: "Dec 2023 - Aug 2024",
     responsibilities: [
-      "Participated many coding contest.",
-      "Solved 250+ questions over leetcode",
+      "Built web experiences with Next.js, React.js, and Supabase.",
+      "Collaborated with student teams on maintainable web solutions.",
+      "Worked with AWS and modern development workflows.",
     ],
   },
   {
-    job: "Java",
-    company: "Sprints",
-    date: "2024 - Present",
+    job: "Competitive Programmer",
+    company: "LeetCode & Codeforces",
+    date: "2023 - Present",
     responsibilities: [
-      "Create Airline management system.",
-      "Skill used - Java, J-servlet, Html, Css.",
-      "Booking And Cancelling of ticket features are available",
+      "Solved 850+ LeetCode, 300+ Codeforces, and 150+ GFG problems.",
+      "LeetCode max rating: 1936; Codeforces max rating: 1370.",
+      "Ranked 907 in LeetCode Weekly Contest 512 and Top 1% in NPTEL HCI.",
+    ],
+  },
+  {
+    job: "AI Product Architect",
+    company: "Amazon HackOn Season 5",
+    date: "Semifinalist - 2026",
+    responsibilities: [
+      "Architected ReLoop, an AI-powered hyperlocal reverse-logistics platform.",
+      "Used AWS Bedrock, machine learning, and geospatial smart routing.",
+      "Added a RAG chatbot and Green Credit System for sustainable disposal.",
+    ],
+  },
+  {
+    job: "AI/ML Developer",
+    company: "ByteVerse 7.0",
+    date: "Finalist - 2025",
+    responsibilities: [
+      "Created DeFace, a deepfake detector for real and manipulated media.",
+      "Used Google's Vision Transformer API and transfer learning.",
+      "Combined adversarial ML with the ViT pipeline to improve precision by 5%.",
+    ],
+  },
+  {
+    job: "Hackathon Achievements",
+    company: "Amazon ML, Flipkart & Adobe",
+    date: "2025 - 2026",
+    responsibilities: [
+      "Top 200 in the Amazon ML Challenge among 89,392 participants.",
+      "Semifinalist at Flipkart GRIDLOCK 2.0 with a traffic-demand ML model.",
+      "Semifinalist at the Adobe India Hackathon 2025.",
     ],
   },
 ];
 
 const AllExperiences = () => {
   return (
-    <div className="flex md:flex-row sm:flex-col items-center justify-between">
-      {experiences.map((experience, index) => {
-        return (
-          <>
-            <SingleExperience key={index} experience={experience} />
-            {index < 2 ? (
-              <motion.div
-                variants={fadeIn("right", 0)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                <FaArrowRightLong className="text-6xl text-orange lg:block sm:hidden" />
-              </motion.div>
-            ) : (
-              ""
-            )}
-          </>
-        );
-      })}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+      {experiences.map((experience) => (
+        <SingleExperience key={`${experience.job}-${experience.company}`} experience={experience} />
+      ))}
     </div>
   );
 };
