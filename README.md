@@ -51,8 +51,6 @@ This portfolio is deployed using **Vercel / Netlify / GitHub Pages**.
 ## 📬 Contact
 
 If you have any questions or want to connect:
-
-- **Portfolio**: [yourwebsite.com](https://yourwebsite.com)
 - **GitHub**: [@snigdhaydv27](https://github.com/snigdhaydv27)
 
 ---
