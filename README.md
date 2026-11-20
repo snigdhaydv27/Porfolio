@@ -26,7 +26,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
    ```
 2. Navigate to the project folder:
    ```sh
-   cd portfolio
+   cd porfolio
    ```
 3. Install dependencies:
    ```sh
