@@ -26,7 +26,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
    ```
 2. Navigate to the project folder:
    ```sh
-   cd porfolio
+   cd portfolio
    ```
 3. Install dependencies:
    ```sh
@@ -51,8 +51,6 @@ This portfolio is deployed using **Vercel / Netlify / GitHub Pages**.
 ## 📬 Contact
 
 If you have any questions or want to connect:
-
-- **Portfolio**: [yourwebsite.com](https://yourwebsite.com)
 - **GitHub**: [@snigdhaydv27](https://github.com/snigdhaydv27)
 
 ---
